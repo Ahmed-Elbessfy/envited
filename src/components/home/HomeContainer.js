@@ -5,7 +5,7 @@ import HomeContent from "./HomeContent";
 const HomeContainer = () => {
   return (
     <>
-      <div className="container">
+      <div className="container home-container">
         <div className="row">
           {/* header  */}
           <div className="col-lg-6">

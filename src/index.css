@@ -92,13 +92,20 @@ a separated style sheets  */
 /* rules for medium and large screens  */
 @media screen and (min-width: 768px) {
   body {
-    direction: rtl;
     font-size: 24px;
   }
+
+  /* home direction on large screen is right to left  */
+  .home-container {
+    direction: rtl;
+  }
+
   h1 {
     font-size: 64px;
   }
-  .create_link {
+
+  .create_link,
+  p {
     width: 320px;
     font-size: 20px;
     direction: ltr;
