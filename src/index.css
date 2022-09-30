@@ -1,8 +1,81 @@
+/* variables  */
+:root {
+  /* primary platte */
+  --main-dark-purple: #240d57;
+  --main-purple: #501fc1;
+  --main-light-purple: #8456ec;
+  --main-pink: #e87bf8;
+
+  /* secondary platte */
+  --sec-purple: #ccb6ff;
+  --sec-light-purple: #ede5ff;
+  --sec-white-purple: #f6f2ff;
+
+  /* alert platte */
+  --alert-pink: #ffd7e0;
+  --alert-red: #e61445;
+  --alert-light-green: #d3ffe2;
+  --alert-green: #00805e;
+
+  /* neutrals  */
+  --neut-dark-gray: #4f4f4f;
+  --neut-gray: #828282;
+  --neut-light-gray: #bdbdbd;
+  --neut-lighter-gray: #e0e0e0;
+  --neut-dark-white: #f2f2f2;
+  --neut-white: ##fbfaff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background-color: var(--sec-white-purple);
+  color: var(--main-dark-purple);
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+/* helper classes  */
+/* Since project is not so large or complicated, I would
+have one style sheet, but in other cases I would like to have
+a separated style sheets  */
+
+.neut-dark-gray-cl {
+  color: var(--neut-dark-gray);
+}
+
+.gradient-cl {
+  background: rgb(232, 123, 248);
+
+  background-image: linear-gradient(
+    to right,
+    rgba(232, 123, 248, 1) 0%,
+    rgba(132, 86, 236, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: rgb(232, 123, 248);
+  background: linear-gradient(
+    to right,
+    rgba(232, 123, 248, 1) 0%,
+    rgba(132, 86, 236, 1) 100%
+  );
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
 }
