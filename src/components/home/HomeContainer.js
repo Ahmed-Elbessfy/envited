@@ -1,5 +1,6 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
+import HomeContent from "./HomeContent";
 
 const HomeContainer = () => {
   return (
@@ -10,7 +11,12 @@ const HomeContainer = () => {
           <div className="col-lg-6">
             <HomeHeader />
           </div>
-          <div className="col-lg-6"></div>
+          {/* Content  */}
+          <div className="col-lg-6">
+            <main>
+              <HomeContent />
+            </main>
+          </div>
         </div>
       </div>
     </>
