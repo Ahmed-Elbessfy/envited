@@ -4,8 +4,8 @@ import HomeContent from "./HomeContent";
 
 const HomeContainer = () => {
   return (
-    <>
-      <div className="container home-container">
+    <div className="home-container">
+      <div className="container ">
         <div className="row">
           {/* header  */}
           <div className="col-lg-6">
@@ -19,7 +19,7 @@ const HomeContainer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
